@@ -1,11 +1,11 @@
 {
-  "name": "react-portfolio-hoidanit",
+  "name": "react-portfolio-HoangTanDung",
   "private": true,
   "version": "1.0.0",
   "type": "module",
   "author": {
-    "name": "Hỏi Dân IT vs Eric",
-    "url": "https://hoidanit.vn"
+    "name": "Hoàng Tấn Dũng",
+    "url": "https://www.hoangtandung.click/"
   },
   "scripts": {
     "dev": "vite",
