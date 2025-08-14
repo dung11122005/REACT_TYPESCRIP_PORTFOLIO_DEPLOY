@@ -24,5 +24,19 @@
     },
     "skill": {
         "title": "Kỹ năng"
+    },
+    "about": {
+        "intro": "Xin chào mọi người, tôi là Hoàng Tấn Dũng đến từ Hồ Chí Minh, Việt Nam.",
+        "job": "Hiện tôi làm một lập trình viên Java",
+        "education": "Tốt nghiệp Cử nhân Công Nghệ Thông Tin tại Đại học Sư Phạm Hồ Chí Minh (HCMUE).",
+        "activities": {
+            "description": "Ngoài việc code, tôi thích tìm hiểu về lịch sử phát triển công nghệ và một số giải thưởng:",
+            "list": [
+                "Giải khuyến khích NCKH(2024 - 2025)",
+                "Giải khuyến khích NCKH(2024 - 2025)",
+                "Giải khuyến khích NCKH(2024 - 2025)"
+            ]
+        },
+        "quote": "Theo đuổi ước mơ là tiền tài địa vị."
     }
 }

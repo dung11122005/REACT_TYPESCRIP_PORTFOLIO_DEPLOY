@@ -1,62 +1,80 @@
 import nestImg from 'assets/project/nestjs.png';
 import nextjsImg from 'assets/project/nextjs.jpeg';
 import reactNativeImg from 'assets/project/react-native.png';
+import nodejsImg from 'assets/project/nodejs.png'
 import reactUltimateImg from 'assets/project/react-ultimate.png';
 import springMvcImg from 'assets/project/spring-mvc.png';
 import springRestImg from 'assets/project/spring-rest.png';
 
 export const APP_DATA = {
-    YOUTUBE_URL: "https://www.youtube.com/@hoidanit",
-    TIKTOK_URL: "https://www.tiktok.com/@hoidanit",
-    UDEMY_URL: "https://www.udemy.com/user/eric-7039/",
-    FACEBOOK_URL: "https://www.facebook.com/askITwithERIC/"
+    GITHUB_URL: "https://github.com/dung11122005",
+    LINKEDIN_URL: "https://www.linkedin.com/in/ho%C3%A0ng-t%E1%BA%A5n-d%C5%A9ng-7049b32a1/",
+    FACEBOOK_URL: "https://www.facebook.com/cotem.khong.90?locale=vi_VN"
 }
+
+export const EDUCATION = [
+    {
+        id:1,
+        title: {
+            vi: "CÔNG NGHỆ THÔNG TIN",
+            en: "INFORMATION TECHNOLOGY"
+        },
+        university: {
+            vi: "TRƯỜNG ĐẠI HỌC SƯ PHẠM THÀNH PHỐ HỒ CHÍ MINH (HCMUE)",
+            en: "HO CHI MINH CITY UNIVERSITY OF EDUCATION (HCMUE)"
+        },
+        duration: {
+            vi: "2023 - 2027",
+            en: "2023 - 2027"
+        }
+    }
+]
 
 export const EXPERIENCES = [
     {
         id: 1,
         title: {
-            vi: "Lập Trình Viên",
-            en: "Fullstack Developer"
+            vi: "HỆ THỐNG QUẢN LÝ HỌC TẬP VÀ THI TRỰC TUYẾN",
+            en: "ONLINE LEARNING AND EXAM MANAGEMENT SYSTEM"
         },
         company: {
-            vi: "Công ty ABCXYZ Ltd.",
-            en: "ABCXYZ Ltd."
+            vi: "JAVA SPRING",
+            en: "JAVA SPRING"
         },
         duration: {
-            vi: "Jan 2024 - Hiện tại",
-            en: "Jan 2024 - Present"
+            vi: "1/7/2025 - 27/8/2025",
+            en: "1/7/2025 - 27/8/2025"
         }
     },
     {
         id: 2,
         title: {
-            vi: "Lập Trình Viên",
-            en: "Fullstack Developer"
+            vi: "TÌM KIẾM VIỆC LÀM",
+            en: "JOB HUNTER"
         },
 
         company: {
-            vi: "Công ty F (freelancer)",
-            en: "F (freelancer)"
+            vi: "JAVA SPRING",
+            en: "JAVA SPRING"
         },
         duration: {
-            vi: "Tháng 6/2022 - Tháng 1/2024",
-            en: "Jun 2022 - Jan 2024"
+            vi: "1/10/2024 - 1/2/2025",
+            en: "1/10/2024 - 1/2/2025"
         }
     },
     {
         id: 3,
         title: {
-            vi: "Dự án tự làm",
-            en: "Self Employed"
+            vi: "CHATBOT HỎI ĐÁP LUẬT GIAO THÔNG (NGHIÊN CỨU KHOA HỌC)",
+            en: "CHATBOT QUESTIONS AND ANSWERS ON TRAFFIC LAWS (SCIENTIFIC RESEARCH)"
         },
         company: {
-            vi: "Học kiến thức mới mỗi ngày",
-            en: "Code and build something in everyday."
+            vi: "Node js",
+            en: "Node js"
         },
         duration: {
-            vi: "Tháng 1/2020 - Hiện tại",
-            en: "Jan 2020 - Present"
+            vi: "1/10/2024 - 1/4/2025",
+            en: "1/10/2024 - 1/4/2025"
         }
     }
 ]
@@ -64,51 +82,45 @@ export const EXPERIENCES = [
 export const PROJECTS = [
     {
         id: 1,
-        imgPath: reactNativeImg,
-        title: "React Native Basic",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-        githubLink: "https://hoidanit.vn/khoa-hoc/react-native-ultimate-phat-trien-ung-dung-mobile-66e7ab4578aaf477418cb538.html",
-        demoLink: "https://hoidanit.vn/khoa-hoc/react-native-ultimate-phat-trien-ung-dung-mobile-66e7ab4578aaf477418cb538.html"
+        imgPath: springMvcImg,
+        title: {
+            vi: "HỆ THỐNG QUẢN LÝ HỌC TẬP VÀ THI TRỰC TUYẾN",
+            en:"ONLINE LEARNING AND EXAM MANAGEMENT SYSTEM"
+        },
+        description:{
+            vi:"Em phát triển web theo kiến trúc MVC, Spring Boot và Thymeleaf (SSR), MySQL. Đăng ký, đăng nhập (đăng nhập Google) và phân quyền theo vai trò. CRUD cho người dùng, khóa học, lớp học, bài kiểm tra và kỳ thi. Giáo viên tạo bài kiểm tra, gán cho lớp học và gửi email hàng loạt cho học sinh. Học sinh làm bài kiểm tra, xem điểm, tham gia các khóa học. khóa học trả phí hỗ trợ thanh toán qua cổng MoMo. Tích hợp AI để luyện viết câu tiếng anh. Theo dõi nhật ký hoạt động hệ thống. Sử dụng Spring Security để xác thực và phân quyền, phân trang dữ liệu và xử lý phản hồi email.",
+            en:"I develop websites using MVC architecture, Spring Boot and Thymeleaf (SSR), MySQL. Registration, login (Google login) and role-based authorization. CRUD for users, courses, classes, tests and exams. Teachers create tests, assign them to classes and send mass emails to students. Students take tests, view scores, participate in courses. Paid courses support payment via MoMo gateway. Integrate AI to practice writing English sentences. Monitor system activity logs. Use Spring Security for authentication and authorization, data pagination and email response handling."
+        },
+        githubLink: "https://github.com/dung11122005/JAVA-SPRING-MVC-EXAM.git",
+        demoLink: "https://java-spring-mvc-exam.onrender.com"
     },
     {
         id: 2,
         imgPath: springRestImg,
-        title: "Java Spring REST",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-        githubLink: "https://hoidanit.vn/khoa-hoc/java-spring-rest-ultimate-for-beginners-6631cb577353ab6861b188f6.html",
-        demoLink: "https://hoidanit.vn/khoa-hoc/java-spring-rest-ultimate-for-beginners-6631cb577353ab6861b188f6.html"
+        title: {
+            vi: "TÌM KIẾM VIỆC LÀM",
+            en: "JOB HUNTER"
+        },
+        description: {
+            vi: "Em phát triển web theo kiến trúc MVC, backend Java Spring Boot với Spring Security, JPA. Hệ thống RESTful API được bảo mật bằng JWT, sử dụng MySQL và hỗ trợ phân trang. Triển khai phân quyền theo role & permission, mỗi permission gắn với một API cụ thể. Toàn bộ luồng nghiệp vụ từ đăng ký, đăng nhập, tìm việc theo kỹ năng/địa điểm, ứng tuyển, theo dõi lịch sử, và nhận email việc làm. Admin có toàn quyền quản trị với phân quyền rõ ràng.",
+            en: "I develop websites using MVC architecture, Java Spring Boot backend with Spring Security, JPA. RESTful API system is secured by JWT, uses MySQL and supports pagination. Implements role & permission delegation, each permission is associated with a specific API. The entire business flow from registration, login, job search by skill/location, application, history tracking, and receiving job emails. Admin has full administrative rights with clear delegation."
+        },
+        githubLink: "https://github.com/dung11122005/JAVA-SPRING-REST?tab=readme-ov-file#-%E1%BA%A3nh-ch%E1%BB%A5p-d%E1%BB%B1-%C3%A1n",
+        demoLink: ""
     },
     {
         id: 3,
-        imgPath: springMvcImg,
-        title: "Java Spring MVC",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-        githubLink: "https://hoidanit.vn/khoa-hoc/java-spring-mvc-ultimate-for-beginners-65ce0b770c05f4450fbd86ac.html",
-        demoLink: "https://hoidanit.vn/khoa-hoc/java-spring-mvc-ultimate-for-beginners-65ce0b770c05f4450fbd86ac.html"
-    },
-    {
-        id: 4,
-        imgPath: nextjsImg,
-        title: "React ProMax with Next.js",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-        githubLink: "https://hoidanit.vn/khoa-hoc/react-pro-max-voi-nextjs-lam-chu-toan-dien-reactjs-hien-dai-65198100e6bafa8caad417a6.html",
-        demoLink: "https://hoidanit.vn/khoa-hoc/react-pro-max-voi-nextjs-lam-chu-toan-dien-reactjs-hien-dai-65198100e6bafa8caad417a6.html"
-    },
-    {
-        id: 5,
-        imgPath: nestImg,
-        title: "Nest.js Basic",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-        githubLink: "https://hoidanit.vn/khoa-hoc/nestjs-voi-typescript-mongodb-sieu-de-64686ec6fb456bbb90663dd6.html",
-        demoLink: "https://hoidanit.vn/khoa-hoc/nestjs-voi-typescript-mongodb-sieu-de-64686ec6fb456bbb90663dd6.html"
-    },
-    {
-        id: 6,
-        imgPath: reactUltimateImg,
-        title: "React Ultimate",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-        githubLink: "https://hoidanit.vn/khoa-hoc/react-ultimate-react-co-ban-tu-z-toi-a-640b50b96cc592d780aab976.html",
-        demoLink: "https://hoidanit.vn/khoa-hoc/react-ultimate-react-co-ban-tu-z-toi-a-640b50b96cc592d780aab976.html"
+        imgPath: nodejsImg,
+        title: {
+            vi: "CHATBOT HỎI ĐÁP LUẬT GIAO THÔNG (NGHIÊN CỨU KHOA HỌC)",
+            en: "CHATBOT QUESTIONS AND ANSWERS ON TRAFFIC LAWS (SCIENTIFIC RESEARCH)"
+        },
+        description: {
+            vi: "Em phát triển chatbot trả lời câu hỏi luật giao thông theo kiến trúc SSR với Node.js (Express), dùng EJS và mô hình MVC. Em kết nối MySQL qua Sequelize, triển khai NLP với Wit.ai để hiểu câu hỏi người dùng. Hệ thống chạy trên Render, lưu trữ dữ liệu bằng Supabase. CRUD cho câu hỏi và tích hợp chatbot với Facebook Messenger để tự động phản hồi theo nội dung đã huấn luyện.",
+            en: "I developed a chatbot to answer traffic law questions using SSR architecture with Node.js (Express), using EJS and MVC model. I connected MySQL via Sequelize, implemented NLP with Wit.ai to understand user questions. The system runs on Render, stores data using Supabase. CRUD for questions and integrate the chatbot with Facebook Messenger to automatically respond according to the trained content."
+        },
+        githubLink: "https://github.com/dung11122005/CHAT_BOT?tab=readme-ov-file#-%E1%BA%A3nh-ch%E1%BB%A5p-d%E1%BB%B1-%C3%A1n",
+        demoLink: ""
     }
 ]
 

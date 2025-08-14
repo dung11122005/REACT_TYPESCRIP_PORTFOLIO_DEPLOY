@@ -24,5 +24,19 @@
     },
     "skill": {
         "title": "Skills"
+    },
+    "about": {
+        "intro": "Hello everyone, I am Hoang Tan Dung from Ho Chi Minh, Vietnam.",
+        "job": "I am currently working as a Java programmer.",
+        "education": "Graduated with a Bachelor of Information Technology from Ho Chi Minh University of Education (HCMUE).",
+        "activities": {
+            "description": "Besides coding, I enjoy learning about the history of technology development and some awards:",
+            "list": [
+                "Scientific Research Encouragement Prize (2024 - 2025)",
+                "Scientific Research Encouragement Prize (2024 - 2025)",
+                "Scientific Research Encouragement Prize (2024 - 2025)"
+            ]
+        },
+        "quote": "Pursuing dreams is money and status."
     }
 }

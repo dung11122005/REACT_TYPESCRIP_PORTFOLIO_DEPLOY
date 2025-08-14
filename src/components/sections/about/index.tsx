@@ -3,14 +3,22 @@ import AnimationLottie from "components/share/animation-lottie";
 import codingJSON from 'assets/lottie/coding.json';
 import { DEVELOPMENT_LOTTIE } from "assets/lottie/string/development";
 import { CONTACT_LOTTIE } from "assets/lottie/string/contact";
-
+import { EDUCATION } from 'helpers/data'
 import GlowCard from "components/share/glow-card";
 import { FaGraduationCap } from "react-icons/fa6";
 import Divider from "components/sections/divider";
 import { APP_DATA } from "helpers/data";
 import SocialMedia from "components/sections/social.media";
+import { useTranslation } from "react-i18next";
+
+type TLanguage = "vi" | "en";
 
 const About = () => {
+
+    const { t, i18n } = useTranslation();
+
+    const currentlanguage = (i18n.resolvedLanguage) as TLanguage;
+    const activities = t("about.activities.list", { returnObjects: true }) as string[];
     return (
         <>
             <Row>
@@ -18,26 +26,23 @@ const About = () => {
                     <h3 className="text-center mb-md-5 mb-2">Know Who <span className="brand-red">I'M</span> </h3>
                     <div>
                         <div>
-                            <p> Hi Everyone, I am HoiDanIT from Hanoi, VietNam.</p>
+                            <p> {t("about.intro")}</p>
 
-                            <p> I am currently employed as a a freelance dev (start-up).</p>
+                            <p> {t("about.job")}</p>
 
-                            <p> I have completed Bachelor's degree in Software Engineer at Hanoi University of Science and Technology (HUST).</p>
+                            <p> {t("about.education")}</p>
                         </div>
                     </div>
                     <div>
-                        <p>Apart from coding, some other activities that I love to do!
-
-                        </p>
+                        <p>{t("about.activities.description")}</p>
                         <ul>
-                            <li>Playing Games</li>
-                            <li>Writing Tech Blogs</li>
-                            <li>Travelling</li>
+                            {activities.map((item, index) => (
+                                <li key={index}>{item}</li>
+                            ))}
                         </ul>
                     </div>
                     <div>
-                        <p className="text-center brand-red">"Pursuing Your Dreams Is How You Become Homeless ~.~"</p>
-                        <p className="text-center brand-red">--Jimmy O Yang</p>
+                        <p className="text-center brand-red">{t("about.quote")}</p>
                     </div>
                 </Col >
                 <Col md={6} xs={12} className="d-flex align-items-center justify-content-center">
@@ -64,20 +69,23 @@ const About = () => {
                         <div >
                             <GlowCard identifier={`experience-5`}>
                                 <div className="p-3 relative">
-                                    <div className="experience-container">
-                                        <div className="duration-text">
-                                            <p>20xx-20xx</p>
-                                        </div>
-                                        <div className="details">
-                                            <div className="icon">
-                                                <FaGraduationCap size={36} />
+                                    {EDUCATION.map((item) => (
+                                        <div className="experience-container">
+                                            <div className="duration-text">
+                                                <p>{item.duration[currentlanguage]}</p>
                                             </div>
-                                            <div className="info">
-                                                <p className="title">Softwaren Engineer</p>
-                                                <p className="company">Hanoi University of Science and Technology (HUST)</p>
+                                            <div className="details">
+                                                <div className="icon">
+                                                    <FaGraduationCap size={36} />
+                                                </div>
+                                                <div className="info">
+                                                    <p className="title">S{item.title[currentlanguage]}</p>
+                                                    <p className="company">{item.university[currentlanguage]}</p>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    ))}
+
                                 </div>
                             </GlowCard>
                         </div>
@@ -90,10 +98,9 @@ const About = () => {
                 <Col md={6} xs={12} className=" mt-md-5 mt-3">
                     <h3 className="mb-md-5 mb-2">FIND ME ON </h3>
                     <SocialMedia
-                        youtube={APP_DATA.YOUTUBE_URL}
+                        github={APP_DATA.GITHUB_URL}
                         facebook={APP_DATA.FACEBOOK_URL}
-                        tiktok={APP_DATA.TIKTOK_URL}
-                        udemy={APP_DATA.UDEMY_URL}
+                        linkedin={APP_DATA.LINKEDIN_URL}
                     />
                 </Col >
                 <Col md={6} xs={12} className="d-flex flex-column align-items-center justify-content-center">

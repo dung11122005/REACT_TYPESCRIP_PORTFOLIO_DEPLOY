@@ -1,8 +1,20 @@
 import { Col, Row } from "react-bootstrap"
 import ProjectCard from "./project.card";
-import { PROJECTS } from "../../../helpers/data";
+import { PROJECTS } from "helpers/data";
+import { useCurrentApp } from "@/components/context/app.context";
+import { useTranslation } from "react-i18next";
+
+
+type TLanguage = "vi" | "en";
 
 const Project = () => {
+
+    const { theme } = useCurrentApp();
+    const { t, i18n } = useTranslation();
+
+
+    const currentlanguage = (i18n.resolvedLanguage) as TLanguage;
+
     return (
         <>
             <Row>
@@ -19,8 +31,8 @@ const Project = () => {
                         <Col md={4} className="project-card" key={item.id}>
                             <ProjectCard
                                 imgPath={item.imgPath}
-                                title={item.title}
-                                description={item.description}
+                                title={item.title[currentlanguage]}
+                                description={item.description[currentlanguage]}
                                 githubLink={item.githubLink}
                                 demoLink={item.demoLink}
                             />
